@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <style>
+        .hero-layover {
+            background-image: url('./backgroundImage.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            height: 545px;
+            text-align: center;
+            padding-top: 30px;
+            color: white;
+            position: relative;
+            display: flex;
+        }
+
+        .hero-layover span {
+            position: relative;
+            width: 30px;
+            height: 30px;
+            background: #4fc3dc;
+            margin: 0 4px;
+            border-radius: 50%;
+            box-shadow: 0 0 0 10px #4fc3dc44,
+                0 0 50px #4fc3dc,
+                0 0 100px #4fc3dc;
+            animation: animate 15s linear infinite;
+            animation-duration: calc(124s / var(--i));
+        }
+
+        .hero-layover span:nth-child(even) {
+            background: #dd4e2b;
+            box-shadow: 0 0 0 10px #b0242444,
+                0 0 50px #e00e0e,
+                0 0 100px #910707;
+        }
+
+        @keyframes animate {
+            0% {
+                transform: translateY(80vh) scale(0);
+            }
+
+            100% {
+                transform: translateX(-30vh) scale(1);
+            }
+        }
+
+        .hero-layover h2 {
+            margin-top: 45px;
+            font-size: 50px;
+            color: rgb(184, 228, 214);
+        }
+
+        .hero-layover p {
+            margin-top: 105px;
+            font-size: 30px;
+        }
+
+        .hero-layover a {
+            border-color: white;
+            font-family: sans-serif;
+            margin-top: 90px;
+        }
+
+        .container p {
+            font-size: 25px;
+            color: rgb(119, 122, 122);
+        }
+
+        .col-lg-2 img {
+            height: 160px;
+            width: 165px;
+            border-radius: 224px;
+        }
+
+        .selfie {
+            border: 50%;
+        }
+
+        .divider-grey {
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 15px;
+            width: 50px;
+            border-top: 2px solid #b3b3b1;
+            padding-bottom: 40px;
+        }
+
+        .btn-primary {
+            border-radius: 10px;
+            border-color: black;
+            background-color: rgb(81, 226, 205);
+            color: #000000;
+        }
+
+        .row-cols-2 {
+            margin-top: -50px;
+        }
+
+        #portfolio {
+            background: rgb(247, 242, 242);
+            /* height: 545px; */
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid mx-4">
+            <a class="navbar-brand " href="#">Anshu Raj</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse " id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link " href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#portfolio">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="more">More</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="hero-layover">
+        <span style="--i:11;"></span>
+        <span style="--i:12;"></span>
+        <span style="--i:24;"></span>
+        <span style="--i:10;"></span>
+
+        <div class="layover-text">
+            <h2>Hi I'm Anshu Raj</h2>
+            <p>A computer science student passionate about programming and design.</p>
+            <a type="button" href="#portfolio" class="btn btn-dark btn-lg">SEE MY WORK</a>
+        </div>
+        <span style="--i:23;"></span>
+        <span style="--i:29;"></span>
+        <span style="--i:14;"></span>
+        <span style="--i:13;"></span>
+    </div>
+    <section id="about" class="features section-padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading my-4">About Me</h2>
+                    <div class="divider-grey"></div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-1"></div>
+                <div class="col-lg-2 text-center">
+                    <img src="./displayPic.jpg" class="selfie" alt="selfie">
+                </div>
+                <div class="col-lg-8">
+                    <p>
+                        As a CSE graduate,My passion for technology began early on, and throughout my academic career, I have
+                        developed a strong foundation in programming languages, software, and tools. I am proficient in
+                        several programming languages such as HTML, CSS, JavaScript, and ReactJs, and I have experience
+                        working with databases, web development, and software engineering.
+                    </p>
+                    <p>
+                        My career goals are to work as a software engineer or developer, and I am excited about the
+                        prospect of using technology to solve real-world problems.
+                    </p>
+                    <p>
+                        Overall, I am excited about the opportunities that lie ahead and I am eager to contribute my
+                        skills and passion to the tech industry.
+                    </p>
+                </div>
+                <div class="col-lg-1"></div>
+            </div>
+        </div>
+    </section>
+
+    <section id="portfolio" class="bg-light-grey">
+        <div class="container">
+            <div class="row my-4">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading my-3">Projects</h2>
+                    <div class="divider-grey"></div>
+                </div>
+            </div>
+            <div class="row row-cols-2 mx-5">
+                <div class="card mx-3 my-2 text-center" style="width: 18rem;">
+                    <img src="./social-media.png" class="card-img-top " alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Social Media Site</h5>
+                        <p class="card-text">Designed and implemented a MERN-based social
+                            platform</p>
+                        <a href="https://social-media-321.netlify.app/" class="btn btn-primary">Click
+                            Here</a>
+                    </div>
+                </div>
+                <div class="card mx-3 my-2 text-center" style="width: 18rem;">
+                    <img src="./ecommerceImg.png" class="card-img-top " alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">E-commerce Site</h5>
+                        <p class="card-text">E-commerce site using HTML, CSS and ReactJs</p>
+                        <a href="https://e-commerce-project123.netlify.app/" class="btn btn-primary">Click
+                            Here</a>
+                    </div>
+                </div>
+                <div class="card mx-3 my-2 text-center" style="width: 18rem;">
+                    <img src="./newsImg.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">News Website</h5>
+                        <p class="card-text">User can get Daily Updates.</p>
+                        <a href="https://news-site123.netlify.app/" class="btn btn-primary">Click Here</a>
+                    </div>
+                </div>
+                <div class="card mx-3 my-2 text-center" style="width: 18rem;">
+                    <img src="./tictoeImg.png" class="card-img-top " alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">TicToe Game</h5>
+                        <p class="card-text">3*3 board player Game</p>
+                        <a href="https://ticc-tacc-game.netlify.app/" class="btn btn-primary">Click
+                            Here</a>
+                    </div>
+                </div>
+                <div class="card mx-3 my-2 text-center center" style="width: 18rem;">
+                    <img src="./weather screenshot.png" class="card-img-top " alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Weather Website</h5>
+                        <p class="card-text">Weather website display Temperature</p>
+                        <a href="https://weather-app-3211.netlify.app/" class="btn btn-primary">Click
+                            Here</a>
+                    </div>
+                </div>
+                <div class="card mx-3 my-2 text-center center" style="width: 18rem;">
+                    <img src="./Invoicer.png" class="card-img-top " alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Invoice Website</h5>
+                        <p class="card-text">Get Invoice for any items</p>
+                        <a href="https://invoicer-123.netlify.app/" class="btn btn-primary">Click
+                            Here</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="dark-bg text-center section-padding contact-wrap my-4" id="contact">
+        <a href="#page-top" class="up-btn page-scroll">
+            <i class="fa fa-chevron-up"></i>
+        </a>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">Contact Me</h2>
+                    <h3 class="section-subheading">Feel free to get in touch. Cheers!</h3>
+
+                </div>
+                <div class="col-lg-2"></div>
+                <div class="col-lg-4">
+                    <div class="light-box box-hover">
+                        <h2>
+                            <i class="fa fa-file-text"></i>
+                            <span>Resume</span>
+                        </h2>
+                        <p>
+                            <a href="AnshuResume.pdf" download="AnshuResume">Download</a>
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="light-box box-hover">
+                        <h2>
+                            <i class="fa fa-paper-plane"></i>
+                            <span>Email</span>
+                        </h2>
+                        <p>
+                            <a href>ranshu233@gmail.com</a>
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-2"></div>
+            </div>
+
+        </div>
+
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
